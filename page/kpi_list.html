@@ -100,67 +100,67 @@
             </table>
         </div>
     </div>
-    <div class="modal fade" id="kpiModal">
-        <div class="modal-dialog">
-            <div class="modal-content animated fadeIn">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span
-                            aria-hidden="true">&times;</span><span
-                            class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="modalTitle">绩效申请</h4>
-                </div>
-                <div class="modal-body">
-                    <table style="font-size: 14px">
-                        <tr>
-                            <td align="right" height="40px" width="60px"> 编号:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> KPI类型:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> KPI指标:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> KPI描述:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                    </table>
-                    <hr/>
-                    <table style="font-size: 14px">
-                        <tr>
-                            <td align="right" height="40px" width="60px"> 申请人:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> 申请类型:</td>
-                            <td>
-                                <select class="form-control m-l-md" style="width: 420px">
-                                    <option value="0">--选择类型--</option>
-                                    <option value="1">个人</option>
-                                    <option value="2">团体</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> 申请分数:</td>
-                            <td><input type="text" class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> 申请理由:</td>
-                            <td>
-                                <textarea class="form-control m-l-md" style="width: 420px" cols="30" rows="3"></textarea>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" @click="save()">保存</button>
-                </div>
+</div>
+<div class="modal fade" id="kpiModal">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="modalTitle">绩效申请</h4>
+            </div>
+            <div class="modal-body">
+                <table style="font-size: 14px">
+                    <tr>
+                        <td align="right" height="40px" width="60px"> 编号:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> KPI类型:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> KPI指标:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> KPI描述:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                </table>
+                <hr/>
+                <table style="font-size: 14px">
+                    <tr>
+                        <td align="right" height="40px" width="60px"> 申请人:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 申请类型:</td>
+                        <td>
+                            <select class="form-control m-l-md" style="width: 420px">
+                                <option value="0">--选择类型--</option>
+                                <option value="1">个人</option>
+                                <option value="2">团体</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 申请分数:</td>
+                        <td><input type="text" class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 申请理由:</td>
+                        <td>
+                            <textarea class="form-control m-l-md" style="width: 420px" cols="30" rows="3"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" @click="save()">保存</button>
             </div>
         </div>
     </div>

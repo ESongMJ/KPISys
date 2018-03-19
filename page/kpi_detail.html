@@ -88,93 +88,92 @@
             </table>
         </div>
     </div>
-    <div class="modal fade" id="kpiModal">
-        <div class="modal-dialog">
-            <div class="modal-content animated fadeIn">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span
-                            aria-hidden="true">&times;</span><span
-                            class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="modalTitle">绩效申请</h4>
-                </div>
-                <div class="modal-body">
-                    <table style="font-size: 14px">
-                        <tr>
-                            <td align="right" height="40px" width="60px"> 编号:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> KPI类型:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> KPI指标:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> KPI描述:</td>
-                            <td>
+</div>
+<div class="modal fade" id="kpiModal">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="modalTitle">绩效申请</h4>
+            </div>
+            <div class="modal-body">
+                <table style="font-size: 14px">
+                    <tr>
+                        <td align="right" height="40px" width="60px"> 编号:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> KPI类型:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> KPI指标:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> KPI描述:</td>
+                        <td>
                                 <textarea class="form-control m-l-md" disabled style="width: 420px" cols="30"
                                           rows="3"></textarea>
-                            </td>
-                        </tr>
-                    </table>
-                    <hr/>
-                    <table style="font-size: 14px">
-                        <tr>
-                            <td align="right" height="40px" width="60px"> 申请人:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> 申请分数:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> 受益人:</td>
-                            <td>
-                                <ul>
-                                    <li><span class="font-bold">张三</span> 5 分</li>
-                                    <li><span class="font-bold">Admin</span> 10 分</li>
-                                    <li><span class="font-bold">李四</span> 5 分</li>
-                                    <li><span class="font-bold">王麻子</span> 5 分</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> 申请理由:</td>
-                            <td>
+                        </td>
+                    </tr>
+                </table>
+                <hr/>
+                <table style="font-size: 14px">
+                    <tr>
+                        <td align="right" height="40px" width="60px"> 申请人:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 申请分数:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 受益人:</td>
+                        <td>
+                            <ul>
+                                <li><span class="font-bold">张三</span> 5 分</li>
+                                <li><span class="font-bold">Admin</span> 10 分</li>
+                                <li><span class="font-bold">李四</span> 5 分</li>
+                                <li><span class="font-bold">王麻子</span> 5 分</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 申请理由:</td>
+                        <td>
                                 <textarea disabled class="form-control m-l-md" style="width: 420px" cols="30"
                                           rows="3"></textarea>
-                            </td>
-                        </tr>
-                    </table>
-                    <hr/>
-                    <table style="font-size: 14px">
-                        <tr>
-                            <td align="right" height="40px" width="60px"> 审核结果:</td>
-                            <td>
-                                <div class="m-l-md" style="width: 420px">
-                                    <span class="label label-primary">通过</span>
-                                    <span class="label label-danger">驳回</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="40px"> 审核意见:</td>
-                            <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" @click="save()">保存</button>
-                </div>
+                        </td>
+                    </tr>
+                </table>
+                <hr/>
+                <table style="font-size: 14px">
+                    <tr>
+                        <td align="right" height="40px" width="60px"> 审核结果:</td>
+                        <td>
+                            <div class="m-l-md" style="width: 420px">
+                                <span class="label label-primary">通过</span>
+                                <span class="label label-danger">驳回</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 审核意见:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" @click="save()">保存</button>
             </div>
         </div>
     </div>
 </div>
-
 <script src="../js/jquery.min63b9.js?v=2.1.4"></script>
 <script src="../js/bootstrap.min14ed.js?v=3.3.6"></script>
 <script src="../js/plugins/iCheck/icheck.min.js"></script>
