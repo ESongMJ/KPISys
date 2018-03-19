@@ -1,15 +1,5 @@
 ## KPI系统-前端工程
 
-### 目录
-> KPISys
-   ├─css
-   ├─fonts
-   ├─img
-   ├─js
-   ├─page
-   │  └─admin
-   └─plugins
-
 ### 功能
 - 个人中心
 - 绩效分类
