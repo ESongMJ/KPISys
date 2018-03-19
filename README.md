@@ -1,15 +1,16 @@
 ## KPI系统-前端工程
 
 ### 目录
----css	   样式
----fonts	   字体
----img	   图片
----js	   js脚本
----page	   页面
-  ---admin      管理页面
----plugins  插件
+KPISys
+   ├─css
+   ├─fonts
+   ├─img
+   ├─js
+   ├─page
+   │  └─admin
+   └─plugins
 
-### 功能明晰
+### 功能
 - 个人中心
 - 绩效分类
 - 绩效申请
