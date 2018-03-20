@@ -8,7 +8,7 @@
 2. 使用Apach部署网站
 
 ### 线上地址
-[KPISys线上地址](http://www.songmj.cn/page/index.html)
+[KPISys](http://www.songmj.cn/page/index.html)
 
 ### 功能
 - 个人中心
