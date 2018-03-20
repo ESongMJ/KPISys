@@ -19,11 +19,19 @@
     </div>
     <div class="ibox-content">
         <div class="row">
-            <div class="col-sm-9 m-l-sm">
+            <div class="col-sm-1 m-l-sm pull-left">
                 <button class="btn btn-primary btn-sm" type="button" @click="modal()"><i class="fa fa-plus"></i> 新增
                 </button>
             </div>
-            <div class="col-sm-3" style="float: right">
+            <div class="col-sm-3 m-l-sm">
+                <select class="form-control">
+                    <option value="0">--选择角色--</option>
+                    <option value="1">普通用户</option>
+                    <option value="2">管理员</option>
+                    <option value="3">超级管理员</option>
+                </select>
+            </div>
+            <div class="col-sm-3 pull-right">
                 <div class="input-group">
                     <input type="text" placeholder="请输入KPI关键字" class="input-sm form-control">
                     <span class="input-group-btn">
@@ -48,8 +56,8 @@
                     <td>管理员</td>
                     <td>版块管理</td>
                     <td>
-                        <button type="button" class="btn btn-info btn-xs">
-                            <i class="fa fa-edit">查看</i>
+                        <button type="button" class="btn btn-info btn-xs" @click="modal()">
+                            <i class="fa fa-edit">修改</i>
                         </button>
                         <button type="button" class="btn btn-danger btn-xs">
                             <i class="fa fa-trash">删除</i>
@@ -61,8 +69,8 @@
                     <td>普通用户</td>
                     <td>教学绩效</td>
                     <td>
-                        <button type="button" class="btn btn-info btn-xs">
-                            <i class="fa fa-edit">查看</i>
+                        <button type="button" class="btn btn-info btn-xs" @click="modal()">
+                            <i class="fa fa-edit">修改</i>
                         </button>
                         <button type="button" class="btn btn-danger btn-xs">
                             <i class="fa fa-trash">删除</i>
@@ -74,7 +82,54 @@
         </div>
     </div>
 </div>
-
+<div class="modal fade" id="navModal">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="modalTitle">新增/修改权限</h4>
+            </div>
+            <div class="modal-body">
+                <table style="font-size: 14px">
+                    <tr>
+                        <td align="right" height="40px" width="60px"> 编号:</td>
+                        <td><input type="text" disabled class="form-control m-l-md" style="width: 420px"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 角色:</td>
+                        <td>
+                            <select class="form-control m-l-md" style="width: 420px">
+                                <option value="0">--选择角色--</option>
+                                <option value="1">普通用户</option>
+                                <option value="2">管理员</option>
+                                <option value="3">超级管理员</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="40px"> 版块:</td>
+                        <td>
+                            <select class="form-control m-l-md" style="width: 420px">
+                                <option value="0">--选择版块--</option>
+                                <option value="1">角色管理</option>
+                                <option value="2">系统设置</option>
+                                <option value="3">站内信</option>
+                                <option value="4">信息管理</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" @click="save()">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="../../js/jquery.min63b9.js?v=2.1.4"></script>
 <script src="../../js/bootstrap.min14ed.js?v=3.3.6"></script>
 <script src="../../js/plugins/iCheck/icheck.min.js"></script>
@@ -89,6 +144,9 @@
             "searchField": ""
         },
         methods: {
+            modal: function () {
+                $("#navModal").modal("show");
+            },
             search: function () {
 
             },
