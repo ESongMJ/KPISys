@@ -11,11 +11,12 @@
     <meta http-equiv="refresh" content="0;ie.html"/>
     <![endif]-->
 
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link href="../css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
-    <link href="../css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
-    <link href="../css/animate.min.css" rel="stylesheet">
-    <link href="../css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://mishengqiang.com/sweetalert/css/sweetalert.css">
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -28,7 +29,7 @@
             <ul class="nav" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <span><img alt="image" class="img-circle" src="../img/profile_small.jpg"/></span>
+                        <span><img alt="image" class="img-circle" src="img/profile_small.jpg"/></span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
                                <span class="block m-t-xs"><strong class="font-bold">CUIT - KPI</strong></span>
@@ -40,7 +41,7 @@
                             </li>
                             <li><a class="J_menuItem" href="../profile.html">个人资料</a>
                             </li>
-                            <li><a class="J_menuItem" href="mailbox.html">信箱</a>
+                            <li><a class="J_menuItem" href="page/mailbox.html">信箱</a>
                             </li>
                             <li class="divider"></li>
                             <li><a href="../login.html">安全退出</a>
@@ -51,19 +52,19 @@
                     </div>
                 </li>
                 <li>
-                    <a class="J_menuItem" href="profile.html"><i class="fa fa-user"></i> <span
+                    <a class="J_menuItem" href="page/profile.html"><i class="fa fa-user"></i> <span
                             class="nav-label">个人中心</span></a>
                 </li>
                 <li>
-                    <a class="J_menuItem" href="kpi_teach.html"><i class="fa fa-book"></i> <span
+                    <a class="J_menuItem" href="page/kpi_teach.html"><i class="fa fa-book"></i> <span
                             class="nav-label">教学绩效</span></a>
                 </li>
                 <li>
-                    <a class="J_menuItem" href="kpi_research.html"><i class="fa fa-flask"></i> <span
+                    <a class="J_menuItem" href="page/kpi_research.html"><i class="fa fa-flask"></i> <span
                             class="nav-label">科研绩效</span></a>
                 </li>
                 <li>
-                    <a class="J_menuItem" href="kpi_audit.html"><i class="fa fa-gavel"></i> <span
+                    <a class="J_menuItem" href="page/kpi_audit.html"><i class="fa fa-gavel"></i> <span
                             class="nav-label">绩效审核</span></a>
                 </li>
                 <li>
@@ -74,10 +75,10 @@
                     </a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a class="J_menuItem" href="mail_compose.html">写信</a>
+                            <a class="J_menuItem" href="page/mail_compose.html">写信</a>
                         </li>
                         <li>
-                            <a class="J_menuItem" href="mailbox.html">收件箱</a>
+                            <a class="J_menuItem" href="page/mailbox.html">收件箱</a>
                         </li>
                     </ul>
                 </li>
@@ -88,20 +89,20 @@
                         <span class="fa arrow"></span>
                     </a>
                     <ul class="nav nav-second-level">
-                        <li><a class="J_menuItem" href="admin/user_manage.html">用户管理</a></li>
-                        <li><a class="J_menuItem" href="admin/role_manage.html">权限管理</a></li>
+                        <li><a class="J_menuItem" href="page/admin/user_manage.html">用户管理</a></li>
+                        <li><a class="J_menuItem" href="page/admin/role_manage.html">权限管理</a></li>
                         <li>
                             <a href="#">绩效管理 <span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
-                                <li><a class="J_menuItem" href="admin/kpi_type_manage.html">类别管理</a></li>
-                                <li><a class="J_menuItem" href="admin/kpi_manage.html">内容管理</a></li>
-                                <li><a class="J_menuItem" href="admin/kpi_audit_manage.html">审核管理</a></li>
+                                <li><a class="J_menuItem" href="page/admin/kpi_type_manage.html">类别管理</a></li>
+                                <li><a class="J_menuItem" href="page/admin/kpi_manage.html">内容管理</a></li>
+                                <li><a class="J_menuItem" href="page/admin/kpi_audit_manage.html">审核管理</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a class="J_menuItem" href="admin/mail_manage.html"><i class="fa fa-th"></i> <span class="nav-label">站内信管理</span></a>
+                    <a class="J_menuItem" href="page/admin/mail_manage.html"><i class="fa fa-th"></i> <span class="nav-label">站内信管理</span></a>
                 </li>
                 <li>
                     <a href="#">
@@ -111,10 +112,13 @@
                     </a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a class="J_menuItem" href="admin/nav_manage.html">版块管理</a>
+                            <a class="J_menuItem" href="page/admin/nav_manage.html">版块管理</a>
                         </li>
                         <li>
-                            <a class="J_menuItem" href="admin/power_manage.html">权限管理</a>
+                            <a class="J_menuItem" href="page/admin/power_manage.html">权限管理</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="javascript:" onclick="hello()">测试</a>
                         </li>
                     </ul>
                 </li>
@@ -165,7 +169,7 @@
                             <li class="divider"></li>
                             <li>
                                 <div class="text-center link-block">
-                                    <a class="J_menuItem" href="mailbox.html">
+                                    <a class="J_menuItem" href="page/mailbox.html">
                                         <i class="fa fa-envelope"></i> <strong> 查看所有消息</strong>
                                     </a>
                                 </div>
@@ -179,7 +183,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-alerts">
                             <li>
-                                <a href="mailbox.html">
+                                <a href="page/mailbox.html">
                                     <div>
                                         <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
                                         <span class="pull-right text-muted small">4分钟前</span>
@@ -238,7 +242,7 @@
             <a href="../login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
         </div>
         <div class="row J_mainContent" id="content-main">
-            <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="index_main.html"
+            <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="page/index_main.html"
                     frameborder="0" data-id="index_v1.html"></iframe>
         </div>
         <div class="footer">
@@ -318,13 +322,48 @@
         </div>
     </div>
 </div>
-<script src="../js/jquery.min63b9.js?v=2.1.4"></script>
-<script src="../js/bootstrap.min14ed.js?v=3.3.6"></script>
-<script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-<script src="../js/plugins/layer/layer.min.js"></script>
-<script src="../js/hplus.min862f.js?v=4.1.0"></script>
-<script type="text/javascript" src="../js/contabs.min.js"></script>
-<script src="../js/plugins/pace/pace.min.js"></script>
+<script src="js/jquery.min63b9.js?v=2.1.4"></script>
+<script src="js/bootstrap.min14ed.js?v=3.3.6"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="js/plugins/layer/layer.min.js"></script>
+<script src="js/hplus.min862f.js?v=4.1.0"></script>
+<script type="text/javascript" src="js/contabs.min.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+<script src="http://mishengqiang.com/sweetalert/js/sweetalert-dev.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="myjs/url.js"></script>
+<script>
+    var vm;
+    vm = new Vue({
+        id: "wrapper",
+        data: {
+
+        },
+        methods: {
+            hello: function () {
+                $.ajax({
+                    type: "POST",
+                    url: localUrl+"/hello/sayHelo",
+                    success: function (res) {
+                        alert(res);
+                    }
+                });
+            }
+        },
+        created: function () {
+            this.hello();
+        }
+    });
+    function hello() {
+        $.ajax({
+            type: "POST",
+            url: localUrl+"/hello/sayHelo",
+            success: function (res) {
+                alert(res);
+            }
+        });
+    }
+</script>
 </body>
 </html>
